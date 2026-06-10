@@ -1,6 +1,28 @@
+# Secrets / local config
 .env
+.env.*
+!.env.example
+
+# Claude Code local settings (personal, not shared)
+.claude/settings.local.json
+
+# Python
 __pycache__/
 *.pyc
+*.pyo
 .venv/
 venv/
+.pytest_cache/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
 *.log
