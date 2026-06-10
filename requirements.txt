@@ -1,0 +1,4 @@
+requests>=2.31.0
+# Optional: only needed for the AI (Claude) layer of the price analysis.
+# The tool runs fine without it (heuristics-only) if no API key is set.
+anthropic>=0.40.0

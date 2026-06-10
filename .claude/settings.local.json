@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=730&count=5&maxlength=300\")",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\('GID:',i['gid'],'\\\\nTITLE:',i['title'],'\\\\nFEED:',i.get\\('feedname'\\),'\\\\nDATE:',i['date'],'\\\\nURL:',i['url'],'\\\\n---'\\) for i in d['appnews']['newsitems']]\")",
+      "Bash(py --version)",
+      "Bash(curl -s \"https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=730&count=3&maxlength=200\")"
+    ]
+  }
+}
